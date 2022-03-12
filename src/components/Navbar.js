@@ -15,8 +15,8 @@ class Navbar extends Component {
           await provider.request({
             method: 'wallet_addEthereumChain',
             params: [{
-              chainId: '0x89', // Moonbase Alpha's chainId is 1287, which is 0x507 in hex
-              chainName: 'Polygon',
+              chainId: '0X13881', // Moonbase Alpha's chainId is 1287, which is 0x507 in hex
+              chainName: 'Mumbai TestNet',
               nativeCurrency: {
                 name: 'MATIC',
                 symbol: 'MATIC',
@@ -32,6 +32,7 @@ class Navbar extends Component {
       } else {
         console.error('Please install MetaMask');
       }
+    }
     }
     return (
       <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
