@@ -32,7 +32,7 @@ class Navbar extends Component {
       } else {
         console.error('Please install MetaMask');
       }
-    }
+    
     }
     return (
       <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
