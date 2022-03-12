@@ -15,15 +15,15 @@ class Navbar extends Component {
           await provider.request({
             method: 'wallet_addEthereumChain',
             params: [{
-              chainId: '0X13881', // Moonbase Alpha's chainId is 1287, which is 0x507 in hex
-              chainName: 'Mumbai TestNet',
+              chainId: '0x89', // Moonbase Alpha's chainId is 1287, which is 0x507 in hex
+              chainName: 'Polygon Mainnet',
               nativeCurrency: {
                 name: 'MATIC',
                 symbol: 'MATIC',
                 decimals: 18
                },
-              rpcUrls: ['https://rpc-mumbai.maticvigil.com/'],
-              blockExplorerUrls: ['https://mumbai-explorer.matic.today/']
+              rpcUrls: ['https://rpc-mainnet.maticvigil.com/'],
+              blockExplorerUrls: ['https://explorer.matic.network/']
             }]
           })
         } catch(e) {
