@@ -37,7 +37,7 @@ class Main extends Component {
             
             <div className="flex ">
                 <small className="text-primary">
-                  <small id="account">MATIC:...9f1357a40</small>
+                  <small id="account">{this.props.account}</small>
                 </small>
               </div>
               <div>
