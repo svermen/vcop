@@ -108,6 +108,7 @@ class App extends Component {
       content = <p id="loader" className="text-center">Loading...</p>
     } else {
       content = <Main
+        account={this.state.account}
         daiTokenBalance={this.state.daiTokenBalance}
         dappTokenBalance={this.state.dappTokenBalance}
         stakingBalance={this.state.stakingBalance}
